@@ -13,7 +13,10 @@
   @for (gasto of listaGastos; track gasto._id) {
     <article class="content-historico-item">
       <div class="content-historico-item--icon">
-        <fa-icon [icon]="faCar" class="content-historico-item--icon-svg" />
+        <fa-icon
+          [icon]="getIconByCategoria(gasto.categoria)"
+          class="content-historico-item--icon-svg"
+        />
       </div>
       <div class="content-historico-item--info">
         <strong>{{ gasto.descricao }}</strong>
