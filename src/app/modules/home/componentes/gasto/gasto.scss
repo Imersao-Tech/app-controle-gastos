@@ -1,17 +1,4 @@
-$pink-dark: #C93A6B;
-$pink-base: #CE6387;
-$pink-light: #E3B1C2;
-
-$gray-dark: #2F5C2D;
-$gray-base: #52A350;
-$gray-light: #CDDFCC;
-
-$gray-400: #332E32;
-$gray-300: #7A6E76;
-$gray-200: #F4E6F0;
-$gray-100: #F7F3F6;
-
-$white: #FFFFFF;
+@use '../../../../shared/styles' as *;
 
 .content-gasto {
   display: flex;
@@ -22,25 +9,6 @@ $white: #FFFFFF;
   header {
     display: flex;
     justify-content: space-between;
-
-    .content-gasto-titulo {
-
-      h1,
-      p {
-        margin: 0;
-        font-family: "Roboto", sans-serif;
-      }
-
-      h1 {
-        color: $pink-dark;
-        font-size: 24px;
-      }
-
-      p {
-        color: $gray-300;
-        font-size: 16px;
-      }
-    }
   }
 
   form.content-form-gastos {
@@ -75,7 +43,7 @@ $white: #FFFFFF;
       padding: 1rem;
       border-radius: 8px;
       border: none;
-      background-color: #CE6387;
+      background-color: $pink-dark;
       color: #FFFFFF;
       font-family: "Roboto", sans-serif;
       font-size: 14px;
