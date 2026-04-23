@@ -10,17 +10,19 @@
     </div>
   </header>
 
-  <article class="content-historico-item">
-    <div class="content-historico-item--icon">
-      <fa-icon [icon]="faCar" class="content-historico-item--icon-svg" />
-    </div>
-    <div class="content-historico-item--info">
-      <strong>Uber</strong>
-      <div>
-        <p>Transporte</p>
-        <p>Hoje</p>
+  @for (gasto of listaGastos; track gasto._id) {
+    <article class="content-historico-item">
+      <div class="content-historico-item--icon">
+        <fa-icon [icon]="faCar" class="content-historico-item--icon-svg" />
       </div>
-    </div>
-    <p class="content-historico-item--valor">- R$32,00</p>
-  </article>
+      <div class="content-historico-item--info">
+        <strong>{{ gasto.descricao }}</strong>
+        <div>
+          <p>{{ gasto.categoria }}</p>
+          <p>{{ gasto.data | date:'dd/MM/yyyy' }}</p>
+        </div>
+      </div>
+      <p class="content-historico-item--valor">- R${{ gasto.valor | number:'1.2-2' }}</p>
+    </article>
+  }
 </section>
