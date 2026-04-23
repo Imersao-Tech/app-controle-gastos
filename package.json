@@ -22,6 +22,7 @@
     "@fortawesome/angular-fontawesome": "^4.0.0",
     "@fortawesome/free-solid-svg-icons": "^7.2.0",
     "express": "^5.1.0",
+    "json-server": "^1.0.0-beta.15",
     "ng2-currency-mask": "^13.0.3",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0"

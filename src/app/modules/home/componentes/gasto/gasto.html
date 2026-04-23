@@ -10,7 +10,9 @@
     </div>
   </header>
 
-  <form class="content-form-gastos">
+  <form 
+    [formGroup]="form"
+    class="content-form-gastos">
     <div>
       <label for="valor">Valor</label>
       <input 
@@ -18,13 +20,14 @@
         id="valor" 
         name="valor" 
         placeholder="R$ 150,00"
+        formControlName="valor"
         currencyMask
         [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }" />
     </div>
 
     <div>
       <label for="categoria">Categoria</label>
-      <select name="categoria" id="categoria">
+      <select name="categoria" id="categoria" formControlName="categoria">
         <option value="">Selecione uma categoria</option>
         <option value="alimentacao">Alimentação</option>
         <option value="transporte">Transporte</option>
@@ -40,7 +43,8 @@
         id="descricao" 
         name="descricao"
         placeholder="Digite uma descrição"
-        maxlength="50" />
+        maxlength="50"
+        formControlName="descricao" />
     </div>
 
     <div>
@@ -48,9 +52,10 @@
       <input 
         type="date" 
         id="data" 
-        name="data" />
+        name="data"
+        formControlName="data" />
     </div>
 
-    <button type="submit">+ Adicionar gasto</button>
+    <button type="submit" (click)="onSubmit()">+ Adicionar gasto</button>
   </form>
 </section>
