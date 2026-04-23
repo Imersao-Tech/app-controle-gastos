@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 769px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  app-gasto {
+    min-width: 450px;
+  }
+
+  app-historico {
+    flex: 1;
+  }
+}
