@@ -15,7 +15,8 @@
         type="text" 
         id="valor" 
         name="valor" 
-        step="0.01" />
+        currencyMask
+        [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }" />
     </div>
 
     <div>
