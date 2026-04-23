@@ -9,6 +9,17 @@
   header {
     display: flex;
     justify-content: space-between;
+
+    .content-historico--filter  {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background-color: $pink-light;
+      color: $pink-dark;
+      border-radius: 8px;
+    }
   }
 
   .content-historico-item {
@@ -19,6 +30,17 @@
     border: 1px solid $gray-300;
     padding: 0.5rem;
     border-radius: 8px;
+  }
+
+  .content-historico-item--icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $pink-light;
+    color: $pink-dark;
   }
 
   .content-historico-item--info {

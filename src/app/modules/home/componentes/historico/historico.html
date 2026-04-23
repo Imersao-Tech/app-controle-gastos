@@ -1,16 +1,18 @@
 <section class="content-historico">
   <header>
-    <div class="content-gasto-titulo">
+    <div>
       <h1>Histórico de transações</h1>
       <p>Últimas movimentações</p>
     </div>
 
-    <i class="fa-solid fa-wallet"></i>
+    <div class="content-historico--filter">
+      <fa-icon [icon]="faFilter" />
+    </div>
   </header>
 
   <article class="content-historico-item">
     <div class="content-historico-item--icon">
-      <i class="fa-solid fa-coins"></i>
+      <fa-icon [icon]="faCar" class="content-historico-item--icon-svg" />
     </div>
     <div class="content-historico-item--info">
       <strong>Uber</strong>
