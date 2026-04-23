@@ -1,0 +1,12 @@
+{
+  "gastos": [
+    {
+      "valor": 150,
+      "categoria": "alimentacao",
+      "descricao": "Almoço",
+      "data": "2026-04-23",
+      "id": "dvRyRn-IpDI"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
