@@ -1,0 +1,40 @@
+<section class="content-gasto">
+  <header>
+    <div class="content-gasto-titulo">
+      <h1>Adicionar gasto</h1>
+      <p>Registre um novo gasto</p>
+    </div>
+
+    <em>teste</em>
+  </header>
+
+  <form class="content-form-gastos">
+    <div>
+      <label for="valor">Valor</label>
+      <input type="number" id="valor" name="valor" step="0.01" />
+    </div>
+
+    <div>
+      <label for="categoria">Categoria</label>
+      <select name="categoria" id="categoria">
+        <option value="">Selecione uma categoria</option>
+        <option value="alimentacao">Alimentação</option>
+        <option value="transporte">Transporte</option>
+        <option value="moradia">Moradia</option>
+        <option value="lazer">Lazer</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="descricao">Descrição</label>
+      <input type="text" id="descricao" name="descricao" />
+    </div>
+
+    <div>
+      <label for="data">Data</label>
+      <input type="date" id="data" name="data" />
+    </div>
+
+    <button type="submit">+ Adicionar gasto</button>
+  </form>
+</section>
