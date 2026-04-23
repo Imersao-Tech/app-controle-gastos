@@ -1,60 +1,85 @@
-# AppControleGastos
+# Imersão Tech | App Controle de Gastos
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.7.
+Aplicação desenvolvida na **Imersão Tech** com **Angular** para controle de gastos pessoais.
 
-## Development server
+## Objetivo
 
-To start a local development server, run:
+O projeto permite registrar e visualizar gastos, ajudando no acompanhamento financeiro do dia a dia.
+
+## Tecnologias
+
+- Angular 21
+- TypeScript
+- SCSS
+- Vitest (testes unitários)
+
+## Pré-requisitos
+
+- Node.js (recomendado: versão LTS)
+- npm
+- Angular CLI (opcional, se quiser usar comandos `ng` globalmente)
+
+## Como rodar o projeto
+
+1. Instale as dependências:
 
 ```bash
-ng serve
+npm install
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+2. Inicie o servidor de desenvolvimento:
 
 ```bash
-ng generate component component-name
+npm start
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+3. Abra no navegador:
+
+```text
+http://localhost:4200
+```
+
+## Scripts principais
+
+### Subir aplicação em modo desenvolvimento
+
+```bash
+npm start
+```
+
+### Rodar testes unitários
+
+```bash
+npm test
+```
+
+### Gerar build de produção
+
+```bash
+npm run build
+```
+
+## Estrutura base
+
+- `src/app/modules/home`: módulo principal da tela inicial
+- `src/app/modules/home/componentes/gasto`: componente de item de gasto
+- `src/app/modules/home/componentes/historico`: componente de histórico de gastos
+
+## Comandos úteis do Angular CLI
+
+Gerar um novo componente:
+
+```bash
+ng generate component nome-do-componente
+```
+
+Ver todos os schematics disponíveis:
 
 ```bash
 ng generate --help
 ```
 
-## Building
+## Referências
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-# app-controle-gastos
+- [Angular CLI](https://angular.dev/tools/cli)
+- [Documentação oficial do Angular](https://angular.dev)
