@@ -72,14 +72,14 @@ $white: #FFFFFF;
     }
 
     button {
-      padding: 0.75rem;
+      padding: 1rem;
       border-radius: 8px;
       border: none;
-      background-color: $pink-base;
-      color: $white;
+      background-color: #CE6387;
+      color: #FFFFFF;
       font-family: "Roboto", sans-serif;
-      font-size: 16px;
-      font-weight: 500;
+      font-size: 14px;
+      font-weight: 400;
       cursor: pointer;
 
       &:hover {
