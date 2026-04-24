@@ -4,6 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "mock": "json-server --watch mock/assets/db.json",
+    "dev": "concurrently \"npm run mock\" \"npm run start\" ",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
@@ -21,7 +23,9 @@
     "@angular/ssr": "^21.2.7",
     "@fortawesome/angular-fontawesome": "^4.0.0",
     "@fortawesome/free-solid-svg-icons": "^7.2.0",
+    "concurrently": "^9.2.1",
     "express": "^5.1.0",
+    "json-server": "^1.0.0-beta.15",
     "ng2-currency-mask": "^13.0.3",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0"
