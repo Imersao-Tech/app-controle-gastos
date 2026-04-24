@@ -6,6 +6,14 @@ import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { GastosService } from '../../../../core/services/gastos.service';
 import { CommonModule } from '@angular/common';
 
+interface Gasto {
+  _id: string;
+  valor: number;
+  categoria: string;
+  descricao: string;
+  data: string;
+}
+
 @Component({
   selector: 'app-historico',
   imports: [FontAwesomeModule, CommonModule],
@@ -15,7 +23,7 @@ import { CommonModule } from '@angular/common';
 export class Historico implements OnInit {
   faFilter = faFilter;
 
-  listaGastos: any[] = [];
+  listaGastos: Gasto[] = [];
 
   gastosService = inject(GastosService);
 
@@ -35,7 +43,7 @@ export class Historico implements OnInit {
     this.gastosService.getGastos()
     .subscribe({
       next: (gastos) => {
-        this.listaGastos = gastos as any[];
+        this.listaGastos = gastos as Gasto[];
       },
       error: (err) => {
         console.error(err);
