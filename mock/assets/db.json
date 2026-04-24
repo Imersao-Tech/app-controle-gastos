@@ -1,0 +1,26 @@
+{
+  "gastos": [
+    {
+      "valor": 150,
+      "categoria": "alimentacao",
+      "descricao": "Almoço",
+      "data": "2026-04-23",
+      "id": "dvRyRn-IpDI"
+    },
+    {
+      "valor": 50,
+      "categoria": "transporte",
+      "descricao": "Trabalho",
+      "data": "2026-04-22",
+      "id": "5fmDgRUI-T4"
+    },
+    {
+      "valor": 60,
+      "categoria": "lazer",
+      "descricao": "Cinema",
+      "data": "2026-04-23",
+      "id": "0RSZRGTAqks"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
